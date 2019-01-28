@@ -77,7 +77,7 @@ inquirer
 
 // Driver fx
 const callAPI = (command, keyword) => {
-    console.log(`calling API for ${command}`);
+    console.log(`Calling API for ${command}`);
 
     switch (command) {
         case 'Concert':
