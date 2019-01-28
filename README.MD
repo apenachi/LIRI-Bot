@@ -10,7 +10,7 @@ LIRI will search Bands in Town for concerts, Spotify for songs, and OMDB for mov
 [Axios](https://www.npmjs.com/package/axios), and
 [Node-Spotify-API](https://www.npmjs.com/package/node-spotify-api)
 
-### APIs
+### APIs (You'll need your own keys/ids/secrets to execute this awesome program)
 [Bands In Town API](http://www.artists.bandsintown.com/bandsintown-api),
 [Spotify](https://developer.spotify.com/documentation/web-api), and
 [OMDB](https://www.omdbapi.com)
@@ -22,8 +22,16 @@ LIRI will search Bands in Town for concerts, Spotify for songs, and OMDB for mov
 ```
 npm install
 ```
-4. Run the program using the below cmd.
+4. Open the project dir in your fav JS/Node code editor (e.g. [Visual Studio Code](https://code.visualstudio.com/)) and create `.env` file in it.
+   * Add the following keys/ids/secrets in this file.
+   ```
+   SPOTIFY_ID=<your_spotify_id>
+   SPOTIFY_SECRET=<your_spotify_secret>
+   OMDB_KEY=<your_omdb_key>
+   BANDSINTOWN_KEY=<your_bandsintown_key>
+   ```
+5. Run the program using the below cmd.
 ```
-node .\liri.js
+node liri.js
 ```
-5. Follow the simple instructions on your screen and have fun!
+6. Follow the simple instructions on your screen and have fun!
