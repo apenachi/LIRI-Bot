@@ -233,10 +233,10 @@ const logSearches = (command, keyword) => {
         if (err) {
             console.error(
                 `${logFile} does not exist`);
-            fs.writeFile(logFile, `${moment().format('MM/DD/YYYY h:mm:ss a')} : Captain's Log`, (err) => {
-                if (err) {
-                    console.log(err);
-                }
+                fs.writeFile(logFile, `${moment().format('MM/DD/YYYY h:mm:ss a')} : Captain's Log`, (err) => {
+                    if (err) {
+                        console.error(err);
+                    }
                 console.log(`${logFile} is created`);
             });
         }
