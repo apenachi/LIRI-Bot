@@ -35,3 +35,11 @@ npm install
 node liri.js
 ```
 6. Follow the simple instructions on your screen and have fun!
+
+   ![Step 1](images/Step1.jpg)
+   
+   ![Step 2](images/Step2.jpg)
+   
+   ![Step 3](images/Step3.jpg)
+   
+   ![Step 4](images/Step4.jpg)
