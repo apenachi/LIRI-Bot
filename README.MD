@@ -19,7 +19,7 @@ LIRI will search Bands in Town for concerts, Spotify for songs, and OMDB for mov
 1. Clone this repo on your drive.
 2. cd to this dir using your favorite terminal (e.g. [git bash](https://gitforwindows.org/)).
 3. Open the project dir in your fav JS/Node code editor (e.g. [Visual Studio Code](https://code.visualstudio.com/)) and EDIT `.env` file in it.
-   * ADD the following ids/secrets in this file.
+   * ADD the following ids/secrets/keys in this file.
    ```
    SPOTIFY_ID=<your_spotify_id>
    SPOTIFY_SECRET=<your_spotify_secret>
