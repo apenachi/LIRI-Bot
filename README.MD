@@ -31,8 +31,6 @@ LIRI will search Bands in Town for concerts, Spotify for songs, and OMDB for mov
 npm start
 ```
 5. Follow the simple instructions on your screen and have fun!
-
-   ![Step 1](images/Step1.jpg)
    
    ![Step 2](images/Step2.jpg)
    
