@@ -15,7 +15,8 @@ const spotify = new Spotify(keys.spotify);
 const omdbKey = keys.omdb;
 const tmdbKey = keys.tmdb;
 const bandsInTown = keys.bandsInTown;
-//console.log(keys);
+
+
 
 // declare some global vars
 let command;
@@ -67,7 +68,6 @@ inquirer
                         return name !== '';
                     }
                 }]).then(followupAnswer => {
-                    console.log('followupAnswer: ', followupAnswer)
                     keyword = Object.values(followupAnswer).toString();
                     callAPI(command, keyword);
                 });
@@ -123,7 +123,7 @@ const callBandsInTown = (command, keyword) => {
             console.log(printOutput);
         })
         .catch((err) => {
-            console.error(`Bands in Town API ${err}`);
+            showError(err);
         });
 };
 
@@ -151,7 +151,7 @@ const callSpotify = (command, keyword) => {
             console.log(printOutput);
         })
         .catch((err) => {
-            console.error(`Spotify API ${err}`);
+            showError(err);
         });
 };
 
@@ -197,7 +197,7 @@ const callOMDB = (command, keyword) => {
             console.log(printOutput);
         })
         .catch((err) => {
-            console.error(`OMDB API ${err}`);
+            showError(err);
         });
 };
 
@@ -236,7 +236,7 @@ const logSearches = (command, keyword) => {
                 `${logFile} does not exist`);
                 fs.writeFile(logFile, `${moment().format('MM/DD/YYYY h:mm:ss a')} : Captain's Log`, (err) => {
                     if (err) {
-                        console.error(err);
+                        showError(err);
                     }
                 console.log(`${logFile} is created`);
             });
@@ -252,4 +252,16 @@ const logSearches = (command, keyword) => {
             console.log(`Your query is logged`);
         }
     });
+}
+
+const showError = (error) => {
+    var white = '\x1b[37m';
+    var red = '\x1b[31m';
+    var ERROR = '='.repeat(50) + '\nSomething Went Wrong. Please verify API keys\n' + '='.repeat(50);
+    if(!!process.env.NODE_ENV && process.env.NODE_ENV !== 'production'){
+        console.error(`Spotify API ${error}`);
+    } else {
+        console.log(red, '\n' + ERROR);
+        console.log(white);
+    }
 }

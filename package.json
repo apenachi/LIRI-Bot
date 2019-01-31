@@ -5,6 +5,7 @@
   "main": "liri.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm install && node liri.js"
   },
   "keywords": [
     "liri",
