@@ -22,7 +22,7 @@ LIRI will search Bands in Town for concerts, Spotify for songs, and OMDB for mov
 ```
 npm install
 ```
-4. Open the project dir in your fav JS/Node code editor (e.g. [Visual Studio Code](https://code.visualstudio.com/)) and create `.env` file in it.
+4. Open the project dir in your fav JS/Node code editor (e.g. [Visual Studio Code](https://code.visualstudio.com/)) and edit `.env` file in it.
    * Add the following keys/ids/secrets in this file.
    ```
    SPOTIFY_ID=<your_spotify_id>

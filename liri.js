@@ -67,6 +67,7 @@ inquirer
                         return name !== '';
                     }
                 }]).then(followupAnswer => {
+                    console.log('followupAnswer: ', followupAnswer)
                     keyword = Object.values(followupAnswer).toString();
                     callAPI(command, keyword);
                 });
