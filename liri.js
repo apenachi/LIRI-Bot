@@ -217,7 +217,7 @@ const surpriseUser = () => {
             let areAllValidCMDs = randomCMDArray.every((val) => possibleCMDArray.includes(val))
             if (areAllValidCMDs) {
                 randomArray.forEach((element, index) => {
-                    callAPI(randomCMDArray[index], randomKWArray[index].replace(/["']/g, ''))
+                    callAPI(randomCMDArray[index], randomKWArray[index].replace(/["]/g, ''))
                 });
             } else {
                 console.error(`${surpriseFile} has invalid commands!`)
