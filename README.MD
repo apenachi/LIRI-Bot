@@ -18,11 +18,7 @@ LIRI will search Bands in Town for concerts, Spotify for songs, and OMDB for mov
 ### Instructions
 1. Clone this repo on your drive.
 2. cd to this dir using your favorite terminal (e.g. [git bash](https://gitforwindows.org/)).
-3. Install required node pkgs simply using the below cmd.
-```
-npm install
-```
-4. Open the project dir in your fav JS/Node code editor (e.g. [Visual Studio Code](https://code.visualstudio.com/)) and EDIT `.env` file in it.
+3. Open the project dir in your fav JS/Node code editor (e.g. [Visual Studio Code](https://code.visualstudio.com/)) and EDIT `.env` file in it.
    * ADD the following ids/secrets in this file.
    ```
    SPOTIFY_ID=<your_spotify_id>
@@ -30,11 +26,11 @@ npm install
    OMDB_KEY=<your_omdb_key>
    BANDSINTOWN_KEY=<your_bandsintown_key>
    ```
-5. Run the program using the below cmd.
+4. Run the program using the below cmd.
 ```
-node liri.js
+start
 ```
-6. Follow the simple instructions on your screen and have fun!
+5. Follow the simple instructions on your screen and have fun!
 
    ![Step 1](images/Step1.jpg)
    
